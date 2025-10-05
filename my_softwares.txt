@@ -1,0 +1,21 @@
+7-zip
+EcoPaste
+Everything
+Git
+HiBit Uninstaller
+VS Code(User)
+Notepad3
+oh-my-posh
+Pixelorama
+PotPlayer
+PowerShell 7
+Python 3.13.7
+Trae CN(User)
+有道词典
+
+
+
+(找一个禁用更新的工具)
+winget
+scoop
+PSCompletion

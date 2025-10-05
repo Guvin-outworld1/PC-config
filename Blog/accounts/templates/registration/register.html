@@ -1,0 +1,9 @@
+{% extends "blogs/base.html" %}
+
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <button type="submit">注册</button>
+    </form>
+{% endblock %}

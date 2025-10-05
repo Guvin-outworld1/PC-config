@@ -1,0 +1,18 @@
+{% extends 'blogs/base.html' %}
+{% block content %}
+    <p>Blog articles</p>
+    <ul>
+        {% for blog in blogs %}
+            <li>
+                <p>
+                    By: <a href="{% url 'blogs:blogger_info' blog.blogger.id %}">{{ blog.blogger }}</a> |
+                    Date: {{ blog.date_added|date:'M d, Y H:i' }} |
+                    <a href="{% url 'blogs:edit_blog' blog.id %}">Edit blog</a>
+                </p>
+                <p>{{ blog.text|linebreaks }}</p>
+            </li>
+        {% empty %}
+            <li>No Blogs</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
